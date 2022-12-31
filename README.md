@@ -3,7 +3,7 @@
 ## supports the following API calls:
 
 ``` 
-curl -X POST "http://127.0.0.1:8000/create/" -H "Content-Type: application/json" -d "{\"url\": \"https://ravkavonline.co.il\"}" 
+curl -X POST "http://127.0.0.1:8000/create" -H "Content-Type: application/json" -d "{\"url\": \"https://ravkavonline.co.il\"}" 
 
 ```
 pay attention to the data [-d] syntax, you must escape the double-quotes in order to send valid JSON payload (such that maintains the key and value wrapped in double-quotes) 
