@@ -1,0 +1,12 @@
+<!-- Essentially an input field and nothing more-->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <form method="POST" action="/create/">
+{#        {% csrf_token %}#}
+        {{ form.as_p }} <!--the input field at forms.py is the one that gets passed here-->
+        <center><button type="submit" class="btn btn-success">Create URL</button></center>
+    </form>
+</div>
+{% endblock content %}
